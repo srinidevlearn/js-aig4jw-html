@@ -26,7 +26,14 @@
   <br />
 
   <label for="phoneField">MobileNumber</label>
-  <input type="number" id="phoneField" name="mobileNumber" />
+  <input
+    type="number"
+    id="phoneField"
+    name="mobileNumber"
+    step="20"
+    min="20"
+    max="100"
+  />
 
   <br />
   <label>Skill</label>
@@ -52,10 +59,12 @@
   <br />
   <!-- time -->
   <input type="time" />
-  <!-- dateTime -->
-  <input type="datetime" />
-
   <br />
+  <!-- search -->
+  <input type="search" />
+  <br />
+<!-- range -->
+  <input type="range" min="0" max="100" value="30">
 
   <button type="button">Submit</button>
   <button type="reset">clear</button>
