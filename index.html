@@ -1,8 +1,58 @@
 <div id="app"></div>
+<!-- REST API -->
+<!-- GET,PUT, POST, DELETE -->
+<!-- GET 2048 characters,url expose -->
+<!-- GET vs POST -->
 
+<form action="https://reqres.in/api/login" method="POST">
+  <fieldset>
+    <legend>LoginForm</legend>
+
+    <label for="emailField">Email</label>
+    <input
+      type="email"
+      id="emailField"
+      name="email"
+      value="eve.holt@reqres.in"
+    />
+    <br />
+    <label for="pwdField">Password</label>
+    <input id="pwdfield" type="password" name="password" value="cityslicka" />
+    <br />
+
+    <button type="submit">Submit</button>
+    <button type="clear">Clear</button>
+  </fieldset>
+</form>
+
+<form method="GET">
+  <fieldset>
+    <legend>GET USER DETAILS</legend>
+
+    <label for="pageField">PageNumber</label>
+    <input type="number" id="pageField" name="page" />
+
+    <button type="submit">Submit</button>
+    <button type="clear">Clear</button>
+  </fieldset>
+</form>
+
+<br />
+<br />
+
+<br />
+<hr />
 <form>
   <label for="nameField"> Name: </label>
-  <input type="text" class="" id="nameField" name="firstname" />
+  <input
+    type="text"
+    class=""
+    id="nameField"
+    name="firstname"
+    placeholder="Name"
+    required="true"
+    value="srini"
+  />
 
   <br />
 
@@ -56,6 +106,7 @@
   <!-- exploring html forms tag input types -->
   <!-- date -->
   <input type="date" />
+
   <br />
   <!-- time -->
   <input type="time" />
@@ -63,9 +114,9 @@
   <!-- search -->
   <input type="search" />
   <br />
-<!-- range -->
-  <input type="range" min="0" max="100" value="30">
-
-  <button type="button">Submit</button>
+  <!-- range -->
+  <input type="range" min="0" max="100" value="30" />
+  <br />
+  <button type="submit">Submit</button>
   <button type="reset">clear</button>
 </form>
